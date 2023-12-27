@@ -7,9 +7,9 @@ const app = express();
 
 app.use(express.json());
 
-app.get("/ingenieria", async (req, res) => {
-  res.json({ description: "sofia is very pretty" });
-});
+// app.get("/ingenieria", async (req, res) => {
+//   res.json({ description: "sofia is very pretty" });
+// });
 
 app.use("/api/products", employesRouter);
 
