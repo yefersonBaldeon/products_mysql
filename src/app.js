@@ -1,6 +1,9 @@
 import express from "express";
 import { pool } from "./db.js";
 
+import cors from "cors";
+
+
 import employesRouter from "./routes/employes.routes.js";
 
 const app = express();
