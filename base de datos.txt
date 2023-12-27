@@ -1,0 +1,26 @@
+-- CREATE DATABASE IF NOT EXISTS reactapi;
+
+-- USE reactapi;
+
+
+
+CREATE TABLE products (
+  id INT(11) NOT NULL AUTO_INCREMENT,
+  name VARCHAR(50) DEFAULT NULL,
+  description VARCHAR(250) DEFAULT NULL,
+  img VARCHAR(250) DEFAULT NULL,
+  price INT(11) DEFAULT NULL, 
+  PRIMARY KEY(id)
+);
+
+
+
+INSERT INTO products VALUES 
+  (1, 'computadora asus', 'marca roger', 'imagenes123', 200),
+  (2, 'laptop', 'marca antrix', 'imagenes123', 200),
+  (3, 'teclado', 'lenovo', 'imagenes123', 200);
+
+
+
+
+
