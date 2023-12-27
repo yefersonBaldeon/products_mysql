@@ -11,6 +11,9 @@ app.use(express.json());
 //   res.json({ description: "sofia is very pretty" });
 // });
 
+
+app.use(cors());
+
 app.use("/api/products", employesRouter);
 
 app.get("/ping", async (req, res) => {
