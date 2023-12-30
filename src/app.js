@@ -3,17 +3,15 @@ import { pool } from "./db.js";
 
 import cors from "cors";
 
-
 import employesRouter from "./routes/employes.routes.js";
 
 const app = express();
 
 app.use(express.json());
 
-// app.get("/ingenieria", async (req, res) => {
-//   res.json({ description: "sofia is very pretty" });
-// });
-
+app.get("/ingenieria", async (req, res) => {
+  res.json({ description: "Sofia is amazing and the most pretty :3" ,works: "She works in PreAcademiaIngenieria"});
+});
 
 app.use(cors());
 
